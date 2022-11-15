@@ -1,0 +1,18 @@
+grafana.ghostadmi.online:443 {
+    reverse_proxy grafana:3000
+
+}
+portainer.ghostadmi.online:443 {
+    reverse_proxy 51.91.77.101:9000
+
+}
+
+http://portainer.ghostadmi.online {
+    redir https://portainer.ghostadmi.online
+
+}
+
+http://grafana.ghostadmi.online {
+    redir https://grafana.ghostadmi.online
+
+}
