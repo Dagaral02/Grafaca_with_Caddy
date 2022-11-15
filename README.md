@@ -27,6 +27,8 @@ docker-compose up -d
 ```
 ### Edit the Caddyfile with your variables
 
+* Change everything that puts EXAMPLE.COM for the data that you want to put !!
+
 
 ## Prerequisites:
 
