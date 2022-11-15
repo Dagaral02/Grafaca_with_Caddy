@@ -1,18 +1,19 @@
-grafana.ghostadmi.online:443 {
+grafana.EXAMPLE:COM:443 {
     reverse_proxy grafana:3000
 
 }
-portainer.ghostadmi.online:443 {
-    reverse_proxy 51.91.77.101:9000
+#These lines are for you to redirect the portainer by caaddy
+#portainer.EXAMPLE.COM:443 {
+#   reverse_proxy IP.EXAMPLE:9000
+#
+#}
+#
+#http://portainer.EXAMPLE.COM {
+#    redir https://portainer.EXAMPLE.COM
+#
+#}
 
-}
-
-http://portainer.ghostadmi.online {
-    redir https://portainer.ghostadmi.online
-
-}
-
-http://grafana.ghostadmi.online {
-    redir https://grafana.ghostadmi.online
-
+http://grafana.EXAMPLE:COM {
+    redir https://grafana.EXAMPLE.COM
+    
 }
