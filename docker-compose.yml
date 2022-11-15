@@ -83,8 +83,8 @@ services:
       - grafana_data:/var/lib/grafana
       - ./grafana/provisioning:/etc/grafana/provisioning
     environment:
-      - GF_SECURITY_ADMIN_USER=frodo
-      - GF_SECURITY_ADMIN_PASSWORD=bolson
+      - GF_SECURITY_ADMIN_USER=ADMIN
+      - GF_SECURITY_ADMIN_PASSWORD=ADMIN
       - GF_USERS_ALLOW_SIGN_UP=false
     restart: unless-stopped
     expose:
