@@ -25,6 +25,8 @@ git clone https://github.com/Einsteinish/Docker-Compose-Prometheus-and-Grafana.g
 cd Docker-Compose-Prometheus-and-Grafana
 docker-compose up -d
 ```
+### Edit the Caddyfile with your variables
+
 
 ## Prerequisites:
 
@@ -319,9 +321,7 @@ First perform a `docker-compose down` then modify your docker-compose.yml to inc
     expose:
       - 3000
     networks:
-      - monitor-net
-    labels:
-      org.label-schema.group: "monitoring"
+      - caddy
 ```
 
 Perform a `docker-compose up -d` and then issue the following commands:
@@ -357,7 +357,4 @@ To run the grafana container as `user: 104` change your `docker-compose.yml` lik
     expose:
       - 3000
     networks:
-      - monitor-net
-    labels:
-      org.label-schema.group: "monitoring"
-```
+      - caddy
